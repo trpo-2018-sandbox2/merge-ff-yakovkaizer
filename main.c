@@ -20,7 +20,7 @@ void print_array(int *arr, int size)
 {
     printf("Array: ");
     int i;
-    for (i = 0; i < N_ELEMENTS(arr); ++i) {
+    for (i = 0; i < 7; ++i) {
         printf("%d ", arr[i]);
     }
     printf("\n");
@@ -28,12 +28,10 @@ void print_array(int *arr, int size)
 
 int main()
 {
-    int arr[] = {3, 1, 4, 1, 5, 9, 2};
-
+    int arr[] = {9,5,4,3,2,1,1};
     const int min = min_element(arr, N_ELEMENTS(arr));
-
     print_array(arr, N_ELEMENTS(arr));
-    printf("Min element: %d\n", min);
+    printf("Min element: %2d\n", min);
 
     return 0;
 }
